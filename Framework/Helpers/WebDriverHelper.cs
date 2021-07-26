@@ -16,6 +16,8 @@ namespace Framework.Helpers
                 switch (Settings.Browser.ToLower())
                 {
                     case "firefox":
+                        // Default location on Mac OS /usr/local/bin
+                        // https://github.com/mozilla/geckodriver/releases
                         WebDriver = new FirefoxDriver();
                         break;
                     default:
